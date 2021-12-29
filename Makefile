@@ -19,7 +19,7 @@ PRECHECK_ROOT?=${HOME}/mpw_precheck
 SIM ?= RTL
 
 # Install lite version of caravel, (1): caravel-lite, (0): caravel
-CARAVEL_LITE?=1
+CARAVEL_LITE?=0
 
 ifeq ($(CARAVEL_LITE),1) 
 	CARAVEL_NAME := caravel-lite
@@ -31,6 +31,19 @@ else
 	CARAVEL_TAG := 'rc-8'
 endif
 
+XZ = xz -z9
+UNXZ = xz -d
+
+.PHONY: compress uncompress
+compress:
+	$(XZ) $(wildcard gds/*.gds)
+	$(XZ) $(wildcard mag/*.mag)
+	$(XZ) $(wildcard verilog/gl/*.v)
+	
+uncompress:
+	$(UNXZ) $(wildcard gds/*.xz) 
+	$(UNXZ) $(wildcard mag/*.xz) 
+	$(UNXZ) $(wildcard verilog/gl/*.v) 
 
 # Include Caravel Makefile Targets
 .PHONY: % : check-caravel

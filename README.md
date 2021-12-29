@@ -1,11 +1,8 @@
-# Caravel User Project
+# Ariel eFPGA
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+Test project for eFPGA fabric implemented with OpenLane. FPGA contains 880 4-input LUTs and uses Yosys+VPR opensource flow for FPGA bitstreams.
 
-## Please fill in your project documentation in this README.md file 
+**DOCUMENTATION UNDER DEVELOPMENT**
 
-
-Refer to [README](docs/source/index.rst) for this sample project documentation. 

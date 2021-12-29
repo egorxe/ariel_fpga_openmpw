@@ -1,0 +1,22 @@
+---
+project:
+  description: "MPW4 Ariel eFPGA"
+  foundry: "SkyWater"
+  git_url: "https://github.com/egorxe/ariel_fpga_openmpw"
+  organization: "Moscow State University"
+  organization_url: "http://phys.msu.ru"
+  owner: "Alexander Monakhov"
+  process: "SKY130"
+  project_name: "Ariel eFPGA"
+  project_id: "00000000"
+  tags:
+    - "Open MPW"
+    - "MPW-4"
+    - "FPGA"
+    - "OpenLANE"
+    - "OpenSource"
+  category: "FPGA"
+  top_level_netlist: "caravel/verilog/gl/caravel.v"
+  user_level_netlist: "verilog/gl/user_project_wrapper.v"
+  version: "1.00"
+  cover_image: "docs/source/_static/caravel_harness.png"
