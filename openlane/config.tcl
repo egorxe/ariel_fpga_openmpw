@@ -11,19 +11,23 @@ set ::env(CLOCK_NETS_EVAL) "{get_full_name \[get_nets -of_objects ariel_fpga_top
 set ::env(PL_MAX_DISPLACEMENT_X) 3000
 set ::env(PL_MAX_DISPLACEMENT_Y) 1000
 set ::env(FP_PDN_VOFFSET) 40
-set ::env(FP_PDN_HOFFSET) 50
+set ::env(FP_PDN_HOFFSET) 40
 set ::env(FP_PDN_VPITCH) 70.0
-set ::env(FP_PDN_HPITCH) 70.0
+set ::env(FP_PDN_HPITCH) 75.0
 set ::env(FP_PDN_AUTO_ADJUST) 0
 set ::env(FP_PDN_IRDROP) 0
 set ::env(PL_TIME_DRIVEN) 1
-set ::env(PL_TARGET_DENSITY) 0.38
+set ::env(PL_TARGET_DENSITY) 0.35
 set ::env(DIODE_INSERTION_STRATEGY) 0
-set ::env(FP_HORIZONTAL_HALO) 20
+set ::env(FP_HORIZONTAL_HALO) 25
 set ::env(PL_RESIZER_MAX_WIRE_LENGTH) 2000.0
 set ::env(PL_RESIZER_ALLOW_SETUP_VIOS) 1
+set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.5
 set ::env(GLB_RESIZER_ALLOW_SETUP_VIOS) 1
 set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
+set ::env(GLB_RT_ADJUSTMENT) 0.2
+set ::env(GLB_RT_L2_ADJUSTMENT) 0.9
+set ::env(GLB_RT_L3_ADJUSTMENT) 0.7
 set ::env(FP_PDN_MACRO_HOOKS) "fpga_struct_block vccd1 vssd1"
 set ::env(PDN_NO_STRIPE_DOMAINS) [list {vccd2} {vdda1} {vdda2}]
 set ::env(PDN_CFG) "/home/egor/proj/fpga/impl/open/pdn_cfg.tcl"
