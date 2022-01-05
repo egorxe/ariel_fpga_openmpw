@@ -16,7 +16,7 @@ Uranus FPGA uses opensource flow for FPGA bitstream generation. Yosys (with opti
 
 ## Sources
 
-This repository contains mainly implementation products (GDS/netlists/etc) needed for OpenMPW and test Caravel programs. VHDL sources of Uranus FPGA fabric, FPGA flow, tests and simulation scripts will be released later in separate repository.
+This repository contains mainly implementation products (GDS/netlists/etc) needed for OpenMPW and test Caravel programs. VHDL sources of Uranus FPGA fabric, FPGA flow, tests and simulation scripts are stored in [main Uranus repository](https://github.com/egorxe/uranus_fpga).
 
 
 **DOCUMENTATION UNDER DEVELOPMENT**
